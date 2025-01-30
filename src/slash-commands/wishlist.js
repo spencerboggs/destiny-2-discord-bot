@@ -82,8 +82,8 @@ module.exports = {
         }
 
         const wishListPath = __dirname + `/../wishlists/${username}.json`;
-
-        const wishList = require(wishListPath);
+        // const wishList = require(wishListPath);
+        const wishList = JSON.parse(fs.readFileSync(wishListPath, 'utf8'));
         
         if (subcommand === 'add') {
             const weaponName = interaction.options.getString('name');
@@ -126,7 +126,15 @@ module.exports = {
 
         } else if (subcommand === 'remove') {
             const weaponName = interaction.options.getString('name');
-            const index = wishList.findIndex(w => w.Name.toLowerCase() === weaponName.toLowerCase());
+            let index = wishList.findIndex(w => w.Name.toLowerCase() === weaponName.toLowerCase());
+
+            if (index === -1) {
+                const weaponStart = wishList.findIndex(w => w.Name.toLowerCase().startsWith(weaponName.toLowerCase()));
+                if (weaponStart !== -1) {
+                    index = weaponStart;
+                }
+            }
+
             if (index === -1) {
                 return interaction.reply({ content: `Weapon **${weaponName}** not found in your wish list.`, flags: 64 });
             }
