@@ -1,0 +1,74 @@
+[
+    {
+        "WEAPON Icon": "/",
+        "Name": "Ideal",
+        "INFO Affinity": "Solar",
+        "Enhance": "Yes",
+        "Reserves": 57,
+        "PERKS Column 1": "Heal Clip\nAir Trigger\nLead from Gold",
+        "Column 2": "Incandescent\nChain Reaction",
+        "Origin Trait": "Cursed Thrall",
+        "TIER Rank": 0,
+        "Tier": "/"
+    },
+    {
+        "WEAPON Icon": null,
+        "Name": "Aberrant Action",
+        "INFO Affinity": "Solar",
+        "Enhance": "Yes",
+        "Reserves": 55,
+        "PERKS Column 1": "Heal Clip",
+        "Column 2": "Incandescent",
+        "Origin Trait": "Radiolaria Transposer",
+        "TIER Rank": 1,
+        "Tier": "S"
+    },
+    {
+        "WEAPON Icon": "TBA",
+        "Name": "Lotus-Eater",
+        "INFO Affinity": "Void",
+        "Enhance": "Yes",
+        "Reserves": null,
+        "PERKS Column 1": "Repulsor Brace\nReconstruction\nShoot to Loot",
+        "Column 2": "Destabilizing Rounds\nWithering Gaze\nOne for All",
+        "Origin Trait": "TBA",
+        "TIER Rank": 2,
+        "Tier": "S"
+    },
+    {
+        "WEAPON Icon": null,
+        "Name": "Tinasha's Mastery",
+        "INFO Affinity": "Stasis",
+        "Enhance": "Yes",
+        "Reserves": 57,
+        "PERKS Column 1": "Air Trigger\nImpulse Amplifier\nDeconstruct",
+        "Column 2": "Chill Clip\nSurrounded\nDesperate Measures",
+        "Origin Trait": "Skulking Wolf",
+        "TIER Rank": 3,
+        "Tier": "S"
+    },
+    {
+        "WEAPON Icon": null,
+        "Name": "Indebted Kindness",
+        "INFO Affinity": "Arc",
+        "Enhance": "No",
+        "Reserves": 55,
+        "PERKS Column 1": "Impulse Amplifier\nLead from Gold",
+        "Column 2": "Voltshot\nSurrounded\nAdagio",
+        "Origin Trait": "Sundering",
+        "TIER Rank": 4,
+        "Tier": "A"
+    },
+    {
+        "WEAPON Icon": null,
+        "Name": "The Call",
+        "INFO Affinity": "Strand",
+        "Enhance": "Yes",
+        "Reserves": 52,
+        "PERKS Column 1": "Slice\nLead from Gold\nDemolitionist",
+        "Column 2": "Desperate Measures\nGolden Tricorn\nOne for All",
+        "Origin Trait": "Dealer's Choice",
+        "TIER Rank": 5,
+        "Tier": "B"
+    }
+]
