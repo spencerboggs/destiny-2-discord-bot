@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "WEAPON Icon": null,
+    "Name": "Perfect Paradox",
+    "INFO Affinity": "Kinetic",
+    "Frame": "Rapid",
+    "Enhance": "Yes",
+    "Reserves": 31,
+    "PERKS Column 1": "Field Prep\nPugilist\nThreat Detector",
+    "Column 2": "One-Two Punch\nTrench Barrel\nVorpal Weapon",
+    "Origin Trait": "Cast No Shadows",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "Shotgun"
+  },
+  {
+    "WEAPON Icon": null,
+    "Name": "VS Velocity Baton",
+    "INFO Affinity": "Void",
+    "Frame": "Area Denial",
+    "Enhance": "Yes",
+    "Reserves": 25,
+    "PERKS Column 1": "Repulsor Brace\nDemolitionist",
+    "Column 2": "Destabilizing Rounds\nAttrition Orbs",
+    "Origin Trait": "Bray Legacy",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "BGL"
+  },
+  {
+    "WEAPON Icon": null,
+    "Name": "Rake Angle",
+    "INFO Affinity": "Stasis",
+    "Frame": "Aggressive",
+    "Enhance": "Yes",
+    "Shield": 42,
+    "Reserves": 33,
+    "PERKS Column 1": "Impulse Amplifier\nOverflow\nLead from Gold",
+    "Column 2": "Chill Clip\nClose to Melee",
+    "Origin Trait": "Stunning Recovery",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "Glaive"
+  },
+  {
+    "WEAPON Icon": null,
+    "Name": "Commemoration",
+    "INFO Affinity": "Void",
+    "Frame": "Adaptive",
+    "Enhance": "Yes",
+    "Reserves": 498,
+    "PERKS Column 1": "Reconstruction\nFourth Time's the Charm\nDragonfly",
+    "Column 2": "Killing Tally\nRepulsor Brace",
+    "Origin Trait": "Bray Inheritance",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "LMG"
+  },
+  {
+    "WEAPON Icon": null,
+    "Name": "Tomorrow's Answer",
+    "INFO Affinity": "Void",
+    "Frame": "High-Impact",
+    "Enhance": "Yes",
+    "Reserves": 12,
+    "PERKS Column 1": "Envious Arsenal\nAir Trigger\nWithering Gaze",
+    "Column 2": "Bait and Switch\nExplosive Light\nBipod",
+    "Origin Trait": "Wild Card",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "Rocket"
+  },
+  {
+    "WEAPON Icon": null,
+    "Name": "Scintillation",
+    "INFO Affinity": "Strand",
+    "Frame": "Adaptive Burst",
+    "Enhance": "Yes",
+    "Reserves": 29,
+    "PERKS Column 1": "Rewind Rounds\nCornered",
+    "Column 2": "Bait and Switch\nSurrounded",
+    "Origin Trait": "Veist Stinger",
+    "TIER Rank": 1,
+    "Tier": "S",
+    "Category": "LFR"
+  }
+]

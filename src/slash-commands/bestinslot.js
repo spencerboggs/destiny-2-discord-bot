@@ -38,7 +38,7 @@ module.exports = {
             const perkColumns = `__Column 1__ \n${weapon["PERKS Column 1"] || "N/A"}\n------------ \n__Column 2__ \n${weapon["Column 2"] || "N/A"}\n-------------------- - - - - -------------------- - - - - `;
 
             embed.addFields(
-                { name: `**${weapon.Name}**`, value: `Tier: ${weapon.Tier} | Affinity: ${weapon["INFO Affinity"]}`, inline: false },
+                { name: `**${weapon.Name}**`, value: `${weapon.category} | Tier: ${weapon.Tier} | Affinity: ${weapon["INFO Affinity"]}`, inline: false },
                 { name: "Perks", value: perkColumns, inline: false }
             );
         });
@@ -51,7 +51,7 @@ function getRank1Weapons() {
     const rank1Weapons = [];
 
     for (const [category, weapons] of Object.entries(SHEETS)) {
-        const rank1WeaponsInCategory = weapons.filter(w => w["TIER Rank"] === 1);
+        const rank1WeaponsInCategory = weapons.filter(w => w["TIER Rank"] === 1).map(w => ({ ...w, category: category.slice(0, -1) }));
         rank1Weapons.push(...rank1WeaponsInCategory);
     }
 
