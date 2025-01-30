@@ -110,7 +110,7 @@ module.exports = {
 
         collector.on('end', collected => {
             if (collected.size === 0) {
-                interaction.followUp({ content: 'No selection made, please try again.', ephemeral: true });
+                interaction.followUp({ content: 'No selection made, please try again.', flags: 64 });
             }
         });
     }

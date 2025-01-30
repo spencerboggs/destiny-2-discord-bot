@@ -31,7 +31,7 @@ module.exports = {
         const weaponName = interaction.options.getString('name');
 
         if (weaponName.toLowerCase().startsWith("ideal")) {
-            return interaction.reply({ content: `Please use the \`/ideal\` command to get ideal weapon stats.`, ephemeral: true });
+            return interaction.reply({ content: `Please use the \`/ideal\` command to get ideal weapon stats.`, flags: 64 });
         }
 
         let foundWeapon = null;
@@ -44,10 +44,17 @@ module.exports = {
                 category = sheet;
                 break;
             }
+
+            const weaponStart = weapons.find(w => w.Name.toLowerCase().startsWith(weaponName.toLowerCase()));
+            if (weaponStart) {
+                foundWeapon = weaponStart;
+                category = sheet;
+                break;
+            }
         }
 
         if (!foundWeapon) {
-            return interaction.reply({ content: `Weapon **${weaponName}** not found!`, ephemeral: true });
+            return interaction.reply({ content: `Weapon **${weaponName}** not found!`, flags: 64 });
         }
 
         let embed = new EmbedBuilder()
@@ -60,13 +67,13 @@ module.exports = {
                 { name: "Weapon Affinity", value: String(foundWeapon["INFO Affinity"]) || "Unknown", inline: true },
                 { name: "Origin Trait", value: String(foundWeapon["Origin Trait"]) || "N/A", inline: true },
 
-                { name: " ", value: "----------------------- - - - - ----------------------- - - - - ----------------------- - - - - ", inline: false },
+                { name: " ", value: "------------------- - - - - ------------------- - - - - ------------------- - - - - ", inline: false },
 
                 { name: "Perk Column 1", value: String(foundWeapon["PERKS Column 1"]) || "N/A", inline: true },
                 { name: "Perk Column 2", value: String(foundWeapon["Column 2"]) || "N/A", inline: true },
                 { name: "Enhanceable?", value: String(foundWeapon["Enhance"]) || "N/A", inline: true },
 
-                { name: " ", value: "----------------------- - - - - ----------------------- - - - - ----------------------- - - - - ", inline: false },
+                { name: " ", value: "------------------- - - - - ------------------- - - - - ------------------- - - - - ", inline: false },
 
                 { name: "Weapon Tier", value: String(foundWeapon["Tier"]) || "N/A", inline: true },
                 { name: "Weapon Rank", value: String(foundWeapon["TIER Rank"]) || "N/A", inline: true },

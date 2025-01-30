@@ -51,7 +51,7 @@ module.exports = {
 
     async execute(client, interaction) {
         try {
-            await interaction.reply({ content: 'Refreshing weapon data...', ephemeral: true });
+            await interaction.reply({ content: 'Refreshing weapon data...', flags: 64 });
 
             for (const [gid, name] of Object.entries(SHEETS)) {
                 await fetchSheetData(gid, name);
@@ -59,10 +59,10 @@ module.exports = {
 
             console.log("Data refresh complete!");
 
-            await interaction.followUp({ content: 'Weapon data has been refreshed and saved to JSON files!', ephemeral: true });
+            await interaction.followUp({ content: 'Weapon data has been refreshed and saved to JSON files!', flags: 64 });
         } catch (error) {
             console.error('Error during data refresh:', error);
-            await interaction.followUp({ content: 'Failed to refresh data!', ephemeral: true });
+            await interaction.followUp({ content: 'Failed to refresh data!', flags: 64 });
         }
     }
 };

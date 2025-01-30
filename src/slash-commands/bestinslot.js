@@ -26,7 +26,7 @@ module.exports = {
         const rank1Weapons = getRank1Weapons();
 
         if (rank1Weapons.length === 0) {
-            return interaction.reply({ content: 'No rank 1 weapons found!', ephemeral: true });
+            return interaction.reply({ content: 'No rank 1 weapons found!', flags: 64 });
         }
 
         let embed = new EmbedBuilder()
