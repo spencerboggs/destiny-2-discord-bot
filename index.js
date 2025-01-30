@@ -39,7 +39,7 @@ client.once("ready", async () => {
     console.log("\x1b[1mDestiny 2 Endgame Analysis Bot IS ONLINE!\x1b[0m\n");
 
     client.user.setPresence({
-        activities: [{ name: `Destiny 2 Endgame Analysis`, type: ActivityType.Playing }],
+        activities: [{ name: `Destiny 2`, type: ActivityType.Playing }],
         status: 'dnd'
     });
 
