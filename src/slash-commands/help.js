@@ -17,6 +17,7 @@ module.exports = {
             { name: '**/top**', value: 'Get the top 5 weapons for a given category.' },
             { name: '**/ideal**', value: 'Get the ideal roll for a given weapon.' },
             { name: '**/spreadsheet**', value: 'Get the link to the original spreadsheet.' },
+            { name: '**/wishlist**', value: 'Add, remove, or view your wish list.' },
         );
         embed.setFooter({ text: 'Created by Spencer Boggs' });
         interaction.reply({ embeds: [embed] });
